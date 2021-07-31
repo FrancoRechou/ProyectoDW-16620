@@ -1,0 +1,27 @@
+.navbar {
+    .nav-link {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .navbar-brand img {
+        width:140px;
+    }
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10PX;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    &:hover {
+        transition: 0.3s;
+        text-shadow: 0 0 9px #111;
+        color: white;
+    }
+}

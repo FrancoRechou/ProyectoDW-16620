@@ -1,0 +1,12 @@
+.titleIndex {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    color: black;
+    margin-top: 150px;
+    font-size: 2em;
+    &:hover {
+        text-shadow: 0 0 12px rgba(155, 154, 154, 0.788);
+        transition: all 0.5s; 
+    }
+}

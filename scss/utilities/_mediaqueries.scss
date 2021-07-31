@@ -1,0 +1,37 @@
+//Pages
+//Index
+//Tablet
+@media only screen and (min-width: 768px){
+    p.titleIndex {
+        margin-top: 150px;
+        font-size: 3em;
+    }
+}
+//Laptop
+@media only screen and (min-width: 1024px){
+    p.titleIndex {
+        margin-top: 200px;
+        font-size: 3.5em;
+    }
+}
+//Desktop 1280x720
+@media only screen and (min-width: 1280px){
+    p.titleIndex {
+        margin-top: 180px;
+        font-size: 5em;
+    }
+}
+//Laptop L
+@media only screen and (min-width: 1440px){
+    p.titleIndex {
+        margin-top: 250px;
+        font-size: 5em;
+    }
+}
+//Desktop 1920x1080
+@media only screen and (min-width: 1920px){
+    p.titleIndex {
+        margin-top: 350px;
+        font-size: 7em;
+    }
+}
