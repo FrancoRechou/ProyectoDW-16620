@@ -35,8 +35,31 @@
         font-size: 7em;
     }
 }
-//Page Wines
-@media only screen and (max-width: 1240px){
+//Pages
+//Shop
+//Mobile
+@media only screen and (min-width: 320px){
+    .item {
+        font-size: 2rem;
+    }
+}
+//Mobile L
+@media only screen and (min-width: 425px){
+    h1.shopTitle{
+        font-size: 3rem;
+    }
+    .item {
+        font-size: 3rem;
+    }
+}
+//Tablet
+@media only screen and (min-width: 425px){
+    h1.shopTitle{
+        font-size: 5rem;
+    }
+}
+//Page wines "Wine card"
+@media only screen and (max-width: 1239px){
     .meadContainer {
         flex-direction: column;
         justify-content: center;

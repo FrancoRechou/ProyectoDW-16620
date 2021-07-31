@@ -37,6 +37,13 @@
   font-weight: 700;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
   p.titleIndex {
     margin-top: 150px;
@@ -72,7 +79,28 @@
   }
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (min-width: 320px) {
+  .item {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  h1.shopTitle {
+    font-size: 3rem;
+  }
+  .item {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  h1.shopTitle {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1239px) {
   .meadContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -176,7 +204,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: auto;
+  margin-top: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -260,5 +289,87 @@
 .meadContainer .porductCard .rightColumn .button:hover {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
+}
+
+.shopTitle {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  cursor: default;
+  color: black;
+}
+
+.wineContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wineContainer .wineCard {
+  background: url(../media/fondobottle.jpg);
+  width: 330px;
+  height: 500px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 1px 20px 20px 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  cursor: default;
+}
+
+.wineContainer .wineCard img {
+  padding-top: 10px;
+  width: 180px;
+  height: 250px;
+}
+
+.wineContainer .wineCard .item {
+  font-weight: 900;
+  padding-bottom: 15px;
+  cursor: default;
+}
+
+.wineContainer .wineCard .wineDescription {
+  font-size: 16px;
+  padding-bottom: 50px;
+  cursor: default;
+}
+
+.wineContainer .wineCard .cardButton {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #030303;
+}
+
+.wineContainer .wineCard .cardButton:hover {
+  background-color: #5d5e5f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wineContainer .wineCard:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

@@ -14,7 +14,8 @@
 .meadContainer{
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	height: auto;
+    margin-top: 70px;
     align-items: center;
     .porductCard {
         background:url(../media/fondobottle.jpg);
