@@ -35,3 +35,12 @@
         font-size: 7em;
     }
 }
+//Page Wines
+@media only screen and (max-width: 1240px){
+    .meadContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}

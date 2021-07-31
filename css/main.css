@@ -72,6 +72,22 @@
   }
 }
 
+@media only screen and (max-width: 1240px) {
+  .meadContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+}
+
 .navbar .nav-link {
   margin-left: 20px;
   margin-top: 20px;
@@ -136,5 +152,113 @@
   text-shadow: 0 0 12px rgba(155, 154, 154, 0.788);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.background1Column {
+  background: -webkit-gradient(linear, left top, right top, from(#e6a713), color-stop(53%, #f1c834), to(#fae91f));
+  background: linear-gradient(90deg, #e6a713 0%, #f1c834 53%, #fae91f 100%);
+}
+
+.background2Column {
+  background: -webkit-gradient(linear, left top, right top, from(#e61d13), color-stop(53%, #f18c34), to(#fa9f1f));
+  background: linear-gradient(90deg, #e61d13 0%, #f18c34 53%, #fa9f1f 100%);
+}
+
+.background3Column {
+  background: -webkit-gradient(linear, left top, right top, from(#b97214), color-stop(53%, #f1bf34), to(#facf1f));
+  background: linear-gradient(90deg, #b97214 0%, #f1bf34 53%, #facf1f 100%);
+}
+
+.meadContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meadContainer .porductCard {
+  background: url(../media/fondobottle.jpg);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem;
+  overflow: hidden;
+  width: 30rem;
+  height: 20rem;
+}
+
+.meadContainer .porductCard .columnLeft {
+  color: white;
+  padding: 2rem;
+  max-width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.meadContainer .porductCard .columnLeft img {
+  width: 180px;
+  height: 250px;
+}
+
+.meadContainer .porductCard .rightColumn {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.meadContainer .porductCard .rightColumn .button {
+  border: 0;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: .8rem 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.meadContainer .porductCard .rightColumn .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+}
+
+.meadContainer .porductCard .rightColumn .button:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 /*# sourceMappingURL=main.css.map */
