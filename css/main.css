@@ -183,6 +183,7 @@
 
 .meadContainer {
   width: 100%;
+  margin-top: 35px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
