@@ -100,15 +100,6 @@
   }
 }
 
-.icon img {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 70px;
-  height: 70px;
-}
-
 .navbar .nav-link {
   margin-left: 20px;
   margin-top: 20px;
@@ -163,6 +154,95 @@
 #bodyContact {
   background: url(../media/fondo3Contacto.jpg) no-repeat center;
   background-size: cover;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, right top, from(#cfd0cf), color-stop(50%, #cccfcc), to(#e3e6e3));
+  background: linear-gradient(90deg, #cfd0cf 0%, #cccfcc 50%, #e3e6e3 100%);
+  height: auto;
+  width: 100%;
+  padding-top: 35px;
+  margin-top: 50px;
+  color: black;
+}
+
+.footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer .footerContent h6 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.footer .footerContent h6 a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .footerContent p {
+  max-width: 500px;
+  margin: 10px 10px;
+  font-size: 18px;
+}
+
+.footer .footerContent .iconSocial {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.footer .footerContent .iconSocial li {
+  margin: 0 20px;
+}
+
+.footer .footerContent .iconSocial a {
+  text-decoration: none;
+  color: #222020;
+}
+
+.footer .footerContent .iconSocial a i {
+  font-size: 32px;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.footer .footerContent .iconSocial a:hover {
+  color: #505050;
+}
+
+.footer .bottomSection {
+  background: #8b8989;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .bottomSection p {
+  font-size: 14px;
+  word-spacing: 2px;
+  padding-top: 10px;
 }
 
 .titleIndex {
@@ -448,7 +528,7 @@
 }
 
 .card p {
-  padding: 15px;
+  padding: 10px;
   display: inline-block;
 }
 
