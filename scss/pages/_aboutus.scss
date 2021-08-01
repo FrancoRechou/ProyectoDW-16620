@@ -1,0 +1,36 @@
+.card {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 90%;
+    background-color: rgba(204, 204, 204, 0.644);
+    margin: 80px auto 50px;
+    img {
+        border: 5px dotted black;
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    p {
+        padding: 15px;
+        display: inline-block;
+    }
+    @media (min-width: 576px) {
+        align-items: center;
+        flex-wrap: nowrap;
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 10px 15px;
+        }
+      &.impar {
+        flex-direction: row;
+      }
+      &.par {
+        flex-direction: row-reverse;
+      }
+    }
+}
