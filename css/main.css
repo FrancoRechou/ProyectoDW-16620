@@ -623,4 +623,8 @@
 .contactArea .contactForm .contactButton:hover {
   background: #2e2e2e;
 }
+
+.contactArea .contactForm .reset {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
