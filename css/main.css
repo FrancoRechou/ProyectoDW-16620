@@ -100,22 +100,6 @@
   }
 }
 
-@media only screen and (max-width: 1239px) {
-  .meadContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-  }
-}
-
 .navbar .nav-link {
   margin-left: 20px;
   margin-top: 20px;
@@ -198,97 +182,145 @@
 }
 
 .meadContainer {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.meadContainer .porductCard {
+  position: relative;
+  border-radius: 10px;
+}
+
+.meadContainer .porductCard .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.meadContainer .porductCard .item img {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.meadContainer .porductCard .face {
+  width: 300px;
+  height: 250px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.meadContainer .porductCard .face.face1 {
+  position: relative;
+  background-color: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: auto;
-  margin-top: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
+  -webkit-transform: translateY(162px);
+          transform: translateY(162px);
 }
 
-.meadContainer .porductCard {
-  background: url(../media/fondobottle.jpg);
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+.meadContainer .porductCard .face.face2 {
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1.5rem;
-  overflow: hidden;
-  width: 30rem;
-  height: 20rem;
-}
-
-.meadContainer .porductCard .columnLeft {
-  color: white;
-  padding: 2rem;
-  max-width: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.meadContainer .porductCard .columnLeft img {
-  width: 180px;
-  height: 250px;
-}
-
-.meadContainer .porductCard .rightColumn {
   padding: 20px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px black;
+          box-shadow: 0 20px 50px black;
+  -webkit-transform: translateY(-88px);
+          transform: translateY(-88px);
 }
 
-.meadContainer .porductCard .rightColumn .button {
-  border: 0;
+.meadContainer .porductCard .face.face2 a {
+  color: white;
+  text-decoration: none;
   border-radius: 50px;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   padding: .8rem 1.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-left: 25%;
 }
 
-.meadContainer .porductCard .rightColumn .button a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  letter-spacing: .1rem;
+.meadContainer .porductCard .face.face2 p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+  color: black;
 }
 
-.meadContainer .porductCard .rightColumn .button:hover {
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+.meadContainer .porductCard:nth-child(1) .item {
+  background: -webkit-gradient(linear, left top, right top, from(#e6a713), color-stop(53%, #f1c834), to(#fae91f));
+  background: linear-gradient(90deg, #e6a713 0%, #f1c834 53%, #fae91f 100%);
+}
+
+.meadContainer .porductCard:nth-child(2) .item {
+  background: -webkit-gradient(linear, left top, right top, from(#e61d13), color-stop(53%, #f18c34), to(#fa9f1f));
+  background: linear-gradient(90deg, #e61d13 0%, #f18c34 53%, #fa9f1f 100%);
+}
+
+.meadContainer .porductCard:nth-child(3) .item {
+  background: -webkit-gradient(linear, left top, right top, from(#b97214), color-stop(53%, #f1bf34), to(#facf1f));
+  background: linear-gradient(90deg, #b97214 0%, #f1bf34 53%, #facf1f 100%);
+}
+
+.meadContainer .porductCard:hover .face.face1 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.meadContainer .porductCard:hover .face.face1 .content {
+  opacity: 1;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.meadContainer .porductCard:hover .face.face2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .shopTitle {
