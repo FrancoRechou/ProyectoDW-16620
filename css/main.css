@@ -151,6 +151,11 @@
   background-size: cover;
 }
 
+#bodyContact {
+  background: url(../media/fondo3Contacto.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .titleIndex {
   text-align: center;
   text-transform: uppercase;
@@ -404,5 +409,70 @@
           transform: translateY(-15px);
   -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
           box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contactArea {
+  padding: 70px 0;
+}
+
+.contactArea p {
+  font-size: 2.5em;
+  text-align: center;
+  color: snow;
+}
+
+.contactArea .line {
+  width: 100px;
+  height: 10px;
+  background: #cfcfcf;
+  margin: 40px auto;
+}
+
+.contactArea .contactForm {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contactArea .contactForm .contactText {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: black;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactArea .contactForm .contactText:focus {
+  -webkit-box-shadow: 0 0 10px 4px #9b9c9c;
+          box-shadow: 0 0 10px 4px #9b9c9c;
+}
+
+.contactArea .contactForm .contactText .formTextArea {
+  resize: none;
+  height: 120px;
+}
+
+.contactArea .contactForm .contactButton {
+  float: right;
+  border: 0;
+  background: #000000;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactArea .contactForm .contactButton:hover {
+  background: #2e2e2e;
 }
 /*# sourceMappingURL=main.css.map */
